@@ -1,0 +1,29 @@
+<div class="container" *ngIf="(cartEntries$ | async )" >
+  <div class="cart-table">
+    <div class="cart-product">
+      <table class="table table-responsive">
+        <tbody>
+          <tr *ngFor="let entry of  (cartEntries$ | async ) ;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{entry.product.title}}</td>
+            <td><img src="{{entry.product.image}}" width="200px" height="200px"></td>
+            <td class="description">{{entry.product.description}}</td>
+            <td>${{entry.product.price}}</td>
+            <td><button (click)="less(entry)"><i class="fa fa-trash-o"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+  

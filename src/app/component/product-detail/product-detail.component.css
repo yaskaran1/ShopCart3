@@ -1,0 +1,106 @@
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+.logo{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.side-bar{
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 70%;
+}
+
+.side-heading{
+  color: #866118;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.art-work{
+  display: block;
+  margin: auto;
+}
+.content{
+  width: 100%;
+  padding: 50px 20px 20px 20px; 
+}
+.form-content{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.art-work img{
+  padding: 20px;
+}
+
+.nav-bar{
+  text-align: right;
+}
+
+.google{
+  width: 220px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2d184;
+}
+
+.twitter{
+  border-radius: 5px;
+  background-color: #f2d184;
+  margin-left: 20px;
+  padding: 10px;
+
+}
+
+.form-element-group{
+  display: flex;
+  gap: 5px;
+}
+
+.form-element{
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+}
+
+.text-input{
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightgrey;
+  border: 1px solid rgb(216, 216, 216);
+  padding: 5px;
+}
+
+.field{
+  width: 100%;
+}
+.input-form{
+  margin-top: 40px;
+}
+
+.form-button{
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #bb3d6e;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1200px){
+  .side-bar{
+    display: none;
+  }  
+  .form-content{
+    margin: 0;
+    width: 100%;
+  }
+}

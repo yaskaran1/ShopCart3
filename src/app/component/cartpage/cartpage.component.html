@@ -1,0 +1,24 @@
+<app-cart></app-cart>
+
+<table class="border" *ngIf="cartEntries$">
+  <tr class="row" >
+    <th class="col-6">
+      Terms and conditions
+    </th>
+    <th class="col-6">
+      Price
+    </th>
+  </tr>
+  <tr class="row">
+    <td class="col-6">
+      This is an agreement between you and Dribbble Digital Services LLC (with its affiliates, “Dribbble” or “we”). 
+    </td>
+    <td class="col-6">
+      {{totalPrice$ | async}} (include 18% GST)
+    </td>
+  </tr>
+</table>
+
+<div class="empty-cart" *ngIf="!cartEntries$">
+  empty cart
+</div>

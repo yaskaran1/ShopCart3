@@ -1,0 +1,42 @@
+
+<div class="container my-auto">
+  <div class="inner">
+      <div class="card my-auto shadow">
+          <div class="card-body px-5">
+              <div class="text-center">
+                  
+              </div>
+              <div class="text-center">
+                  <h2>Welcome</h2>
+              </div>
+              <p style="color: lightslategray; text-align: center;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your Sign up
+                  details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              <form [formGroup]="userForm" (ngSubmit)="OnSubmit()">
+                <div class="form-element-group">
+                  <fieldset class="field">
+                    <input id="user-fname" placeholder="First Name" type="text" class="form-control" formControlName="firstName">
+                    <span class="text-danger" *ngIf="firstName && firstName.invalid && firstName.touched">Invalid</span>
+                  </fieldset><br>
+                  <fieldset class="field">
+                    <input id="user-lname" type="text" placeholder="Last Name" class="form-control" formControlName="lastName">
+                    <span class="text-danger" *ngIf="lastName && lastName.invalid && lastName.touched">Invalid</span>
+                  </fieldset>
+                </div>
+                <br>
+                  <div class="form-group">
+                      <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
+                          name="email" />
+                          <span class="text-danger" *ngIf="email && email.invalid && email.touched">Invalid Email</span>
+                  </div><br>
+                  <div class="form-group">
+                      <input type="password" id="password" placeholder="Password" class="form-control"
+                          formControlName="password" name="password" />
+                          <span class="text-danger" *ngIf="password && password.invalid && password.touched">Invalid Password</span>
+                  </div><br>
+                  <input type="submit" class="btn btn-primary w-100" value="Sign up" name="" (click)="OnSubmit()" [disabled]="userForm.invalid">
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
