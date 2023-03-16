@@ -1,0 +1,122 @@
+.sign-btn{
+  background-color:#ea4c89;
+  color: white;
+}
+.sign-btn:hover{
+  opacity: 0.8;
+  color: white;
+}
+.navitem-radius{
+  padding: 0 10px 0 10px;
+  margin-right: 10 10 10 10;
+}
+.info-detail{
+  font-size: small;
+}
+.info-btn{
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+.info-btn:hover{
+  background-color: white;
+}
+.bg-video{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.item-font{
+  font-size: 12px;
+}
+.nav-font{
+  font-size: 14px;
+  margin-left: 11px;
+  font-weight: bold;
+}
+body{
+font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+.video-opacity{
+  box-shadow: 500px;
+  opacity: 1;
+}
+.dropdown-btn{
+  background-color: white;
+  border-color: rgb(155, 155, 153);
+  color: rgb(155, 155, 153);
+}
+
+.nav-menu{
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.nav-item:hover .nav-menu{
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+}
+.arrow{
+  visibility: hidden;
+}
+.menu-text-1:hover + .arrow-1{
+  visibility: visible;
+}
+.menu-text-2:hover + .arrow-2{
+  visibility: visible;
+}
+.menu-text-3:hover + .arrow-3{
+  visibility: visible;
+}
+.menu-text-4:hover + .arrow-4{
+  visibility: visible;
+}
+.menu-text-5:hover + .arrow-5{
+  visibility: visible;
+}
+.filter-item{
+  width: 330px;
+}
+.upper-bar> ul{
+  margin-top: 30px;
+}
+
+
+.middle-container:hover{
+  visibility: visible;
+}
+
+.middle{
+  /* display:none;  */
+    visibility: hidden;
+    width:100%;
+    height:40%;
+} 
+
+.card:hover   .middle{
+    visibility: visible;
+}
+
+.product-text{
+  display: inline-block;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.description-text{
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.svgColor{
+  fill: rgb(221, 58, 58);
+}
